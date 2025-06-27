@@ -79,7 +79,7 @@ const TopMenu = () => {
 // AppContent component to use hooks
 const AppContent = () => {
   return (
-    <BrowserRouter basename={process.env.REACT_APP_BASENAME || "/"}>
+    <BrowserRouter>
       <CssBaseline />
       <TokenWatcher />
       <TopMenu />

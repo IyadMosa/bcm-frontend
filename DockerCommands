@@ -1,0 +1,5 @@
+docker build -t iyadmosa/bcm-frontend-image:latest .
+
+docker push iyadmosa/bcm-frontend-image:latest
+
+docker run -d --name bcm-frontend  --network bcm-network -p 80:80 iyadmosa/bcm-frontend-image

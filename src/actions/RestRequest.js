@@ -8,7 +8,7 @@ const hostname =
 
 const port = process.env.REACT_APP_BACKEND_PORT;
 const contextPath = process.env.REACT_APP_CONTEXT_PATH;
-export const BASE_URL = `http://${hostname}:${port}${contextPath}`;
+export const BASE_URL = `${contextPath}`;
 
 const getAuthToken = () => localStorage.getItem("token");
 const getProjectId = () => localStorage.getItem("projectId");
